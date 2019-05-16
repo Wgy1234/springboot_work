@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/userController/exit">
+    <table border="1" cellpadding="5" cellspacing="0" width="300" height="100">
+
+        <tr>
+            <th>
+                <h3>欢迎你，尊敬的【<span th:text="${session.user.username}"></span>】用户</h3>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h1>亲，我等你等的好辛苦呀</h1>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <input type="submit" value="退出登录">
+            </th>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

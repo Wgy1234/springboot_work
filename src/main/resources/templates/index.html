@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/userController/login" method="post">
+    <table border="1" cellpadding="5" cellspacing="1" width="500" height="300">
+        <tr>
+            <th colspan="2"><h2>登录页面</h2></th>
+        </tr>
+        <tr>
+            <th>用户名:</th>
+            <th><input type="text" name="username"></th>
+        </tr>
+        <tr>
+            <th>密码:</th>
+            <th><input type="password" name="password"></th>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2">
+                <input type="submit" value="登录">
+                <a href="/userController/getRegister">注册</a>
+                <a href="/userController/toSerchPwd">忘记密码</a>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

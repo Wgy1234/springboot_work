@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span th:text="${message}"></span>
+<form action="/userController/getEmailByUsername" method="post">
+    <table border="1" cellpadding="5" cellspacing="0" width="400" height="200">
+        <tr>
+            <th colspan="2">
+                <h2>账号申诉页面</h2>
+            </th>
+        </tr>
+        <tr>
+            <th>请输入账号:</th>
+            <th><input type="text" name="username" placeholder="请填写申诉账号" required="required"/></th>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="submit" value="找回密码"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

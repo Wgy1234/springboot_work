@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/userController/changePassword" method="post">
+    <input type="hidden" name="id" th:value="${user.id}">
+    <table border="1" cellpadding="0" cellspacing="1" width="400" height="200">
+        <tr>
+            <th colspan="2">
+                <h2>修改密码页面</h2>
+            </th>
+        </tr>
+
+        <tr>
+            <th>请输入新密码:</th>
+            <th><input type="password" name="password" placeholder="请填写密码" required="required"></th>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;" ><input type="submit" value="确认"></td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
